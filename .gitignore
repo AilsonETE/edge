@@ -18,6 +18,7 @@ __pycache__/
 # --- AMBIENTE VIRTUAL / DEPENDÊNCIAS ---
 venv/
 .env/
+.ven/
 .venv/
 env/
 ENV/
