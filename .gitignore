@@ -1,0 +1,126 @@
+# ===============================
+# PROJETO EDGEPHM / SIMULAÇÃO FÍSICA
+# ===============================
+
+# --- AMBIENTE PYTHON ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.py.class
+
+# --- NOTEBOOKS ---
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.nbconvert/
+
+# --- AMBIENTE VIRTUAL / DEPENDÊNCIAS ---
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# --- DADOS GERADOS / SIMULAÇÃO ---
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.h5
+*.pkl
+*.log
+*.tmp
+
+# Bases históricas e resultados simulados
+base_treinamento.csv
+base_validacao.csv
+simulacoes/
+resultados/
+saida_*.csv
+dados_*.csv
+
+# --- CONFIGURAÇÕES LOCAIS ---
+*.ini
+*.cfg
+*.toml
+*.yaml
+*.yml
+config/
+settings_local.py
+credentials.json
+secrets.json
+
+# --- CACHE / TEMPORÁRIOS ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+.cache/
+__cache__/
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# --- LOGS ---
+logs/
+*.log
+nohup.out
+
+# --- ARQUIVOS DE SAÍDA ---
+*.out
+*.err
+*.bak
+*.old
+
+# --- JUPYTER ---
+.jupyter/
+.profile/
+.ipython/
+.ipynb_checkpoints/
+
+# --- TESTES E RELATÓRIOS ---
+.coverage
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+test-output/
+reports/
+
+# --- DOCKER (se usar no futuro) ---
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# --- STREAMLIT / DASH (caso use para visualização) ---
+.streamlit/
+__pycache__/
+*.db
+*.json
+
+# --- MISC ---
+# Evita subir diretórios pesados de mídia ou gráficos renderizados
+plots/
+figures/
+images/
+media/
+outputs/
