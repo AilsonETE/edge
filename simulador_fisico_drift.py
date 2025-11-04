@@ -58,7 +58,7 @@ print(f"Simulador iniciado no modo: {MODO.upper()}")
 # LOOP PRINCIPAL
 
 while True:
-    # 1. FASE NORMAL --------------------------------------
+    # 1. FASE NORMAL 
     if fase == "normal":
         corrente += np.random.normal(0.002, 0.02)
         temperatura += np.random.normal(0.01, 0.05)
@@ -81,7 +81,7 @@ while True:
             fase = "falha"
             tempo_reparo = tick + np.random.randint(80, 150)
 
-    # 2. FASE DE FALHA ------------------------------------
+    # 2. FASE DE FALHA 
     elif fase == "falha":
         if tipo_falha == "sobreaquecimento":
             temperatura += np.random.normal(0.25, 0.2)
@@ -115,7 +115,7 @@ while True:
         if tempo_reparo is not None and tick >= tempo_reparo:
             fase = "reparo"
 
-    # 3. FASE DE REPARO -----------------------------------
+    # 3. FASE DE REPARO 
     elif fase == "reparo":
         corrente += (5.0 - corrente) * 0.15 + np.random.normal(0, 0.02)
         temperatura += (35.0 - temperatura) * 0.15 + np.random.normal(0, 0.1)
@@ -131,7 +131,7 @@ while True:
             tipo_falha = None
             drift_score = 0.0
 
-    # 4. REGISTRO DE LEITURA ------------------------------
+    # 4. REGISTRO DE LEITURA 
     leituras.append({
         "timestamp": datetime.now().isoformat(timespec="seconds"),
         "tick": tick,
